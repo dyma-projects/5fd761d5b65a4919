@@ -1,0 +1,15 @@
+<p>exercice1 works!</p>
+<p>Choisissez une image :</p>
+<button (click)="chooseImage('https://picsum.photos/id/237/200/300')">
+  Chien
+</button>
+<button (click)="chooseImage('https://picsum.photos/id/238/200/300')">
+  Ville
+</button>
+<button (click)="chooseImage('https://picsum.photos/id/231/200/300')">
+  Montagne
+</button>
+<hr />
+<img [src]="imgSrc" *ngIf="imgSrc" />
+<p>Image choisie : {{ imgSrc }}</p>
+<hr />
